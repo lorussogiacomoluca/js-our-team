@@ -2,3 +2,22 @@
     font-weight: 900;
     color: #E53170;
 }
+
+.card-member {
+    align-items: center; /* Allinea verticalmente */
+}
+
+.name{
+    font-weight: 800;
+}
+
+.role{
+    font-size: 10px;
+
+}
+
+.email{
+    font-size: 10px;
+    color: #64C3ED;
+}
+
