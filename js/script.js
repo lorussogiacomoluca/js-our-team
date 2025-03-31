@@ -46,12 +46,12 @@ const createString = (array) => {
         let {name, role, email, img} = array[i]
         //String Concatenate
         string += `
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
-                    <div class="card-member bg-black d-flex">
-                        <div class="img-box bg-primary">
-                            <img src="./${img}" alt="" class="img-fluid"  style="width: 70px;">
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-2 text-center text-md-start">
+                    <div class="card-member bg-black d-md-flex p-sm-2 p-md-0">
+                        <div class="col-sm-12 col-md-6 col-lg-4 img-box ">
+                            <img src="./${img}" alt="" class="img-fluid">
                         </div>
-                        <div class="info-box text-white d-flex flex-column justify-content-between ms-2">
+                        <div class="col-sm-12 col-md-6 col-lg-8 info-box text-white d-flex flex-column justify-content-between ms-md-4">
                             <div class="row d-flex flex-column justify-content-around mb-2">
                                 <div class="name">${name}</div>
                                 <div class="role">${role}</div>
