@@ -77,4 +77,5 @@ const renderCards = (array) => {
     document.getElementById('team-member').innerHTML = string
 }
 
-
+//Rendering
+renderCards(teamMembers)
