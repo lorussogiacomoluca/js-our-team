@@ -38,9 +38,13 @@ const teamMembers = [
   ];
 
 const createString = (array) => {
+    //Create empty string
     let string = '';
+    //FOR Loop: generete HTML String
     for(let i = 0; i< array.length; i++){
+        //Destructuring
         let {name, role, email, img} = array[i]
+        //String Concatenate
         string += `
             <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
                     <div class="card-member bg-black d-flex">
@@ -60,15 +64,16 @@ const createString = (array) => {
                 </div> 
             `
         }
-    console.log(string);
+    //Return FULL html string
     return string
 }
 
-createString(teamMembers)
 
-
+//Rendering function
 const renderCards = (array) => {
+    //Invoke createString function to get string
     let string = createString(array)
+    //InnerHTML String
     document.getElementById('team-member').innerHTML = string
 }
 
