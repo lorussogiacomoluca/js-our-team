@@ -64,3 +64,6 @@ const createString = (array) => {
     return string
 }
 
+createString(teamMembers)
+
+
