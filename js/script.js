@@ -67,3 +67,9 @@ const createString = (array) => {
 createString(teamMembers)
 
 
+const renderCards = (array) => {
+    let string = createString(array)
+    document.getElementById('team-member').innerHTML = string
+}
+
+
