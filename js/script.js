@@ -79,3 +79,36 @@ const renderCards = (array) => {
 
 //Rendering
 renderCards(teamMembers)
+
+//INSERT NEW MEMBER
+const inputName = document.getElementById('name')
+const inputRole = document.getElementById('role')
+const inputEmail = document.getElementById('email')
+const inputImage = document.getElementById('image')
+const button = document.getElementById('btn-submit')
+
+button.addEventListener('click', (e) =>{
+    e.preventDefault()
+   const name = inputName.value;
+   const role = inputRole.value;
+   const email = inputEmail.value;
+   const img = `img/${inputImage.value}`;
+
+   console.log(image);
+
+   if(!name || !role || !email || !image){
+    alert('Devi inserire tutti i campi')
+   }
+
+   const newMember = {
+    name,
+    role,
+    email,
+    img
+   }
+
+   teamMembers.push(newMember)
+   renderCards(teamMembers)
+   
+})
+
